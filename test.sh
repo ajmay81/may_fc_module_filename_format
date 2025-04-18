@@ -23,6 +23,7 @@ cat << _EOF_ > configure.ac
 AC_INIT(test,test)
 m4_include([may_fc_module_filename_format.m4])
 MAY_FC_MODULE_FILENAME_FORMAT()
+AC_OUTPUT
 _EOF_
 autoconf -Wall configure.ac > configure
 rm -rf autom4te.cache configure.ac
